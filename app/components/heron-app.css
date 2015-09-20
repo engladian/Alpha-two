@@ -1,0 +1,31 @@
+﻿html, body {
+    height: 70vh;
+    margin: 0;
+    padding:0;
+}
+.mainheader {
+    font-size: 70px;
+    font-weight: bold;
+    height: 100px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border-bottom: black 2px solid;
+    background-color: lightblue;
+}
+
+.mainfooter {
+    font-size: 70px;
+    font-weight: bold;
+    height: 100px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border-bottom: black 2px solid;
+    background-color: lightblue;
+}
+
+.brand-logo {
+    background-image: url('acme.jpg');
+    height: 350px;
+    width: 350px;
+    border: 2px solid blue;
+}
