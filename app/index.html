@@ -7,26 +7,39 @@
     <!-- endbuild-->
 </head>
 <body ng-app="heronApp">
-    <div class="container-fluid" ng-controller="pageOneController">
+    <div class="container-fluid">
         <div class="row text-center mainheader">
             Product Heading
         </div>
-        <div class="row">
-            <div class="col-sm-4" style="border: 1px solid black;">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam blandit non quam sed viverra. Etiam condimentum ipsum ac enim congue semper. Donec ac massa sit amet quam bibendum porttitor quis quis leo. Aenean metus sapien, consectetur non felis in, volutpat semper nibh. Nunc vestibulum feugiat efficitur. In hac habitasse platea dictumst. Nunc ac porttitor sapien. Pellentesque auctor turpis id odio porta, a efficitur augue sodales. Morbi facilisis dolor turpis, nec eleifend libero egestas eget. Maecenas nulla felis, laoreet ut velit non, efficitur congue nisi. Cras et mi mollis, suscipit leo sed, tristique justo. Aliquam sed nulla et mauris aliquam placerat id vel sapien. Suspendisse tempor laoreet ullamcorper.
-
-                Donec nisl ligula, ultrices ut mauris a, aliquet vulputate velit. Quisque euismod nisl eros, quis vehicula nibh varius at. Suspendisse pretium urna suscipit, cursus mi non, egestas odio. Sed interdum leo suscipit nisi tempus, id fermentum nunc vestibulum. Vestibulum vulputate libero dui, vel imperdiet purus malesuada et. Morbi arcu velit, dapibus ac ornare gravida, ultricies in neque. Duis sollicitudin pellentesque nisi at finibus. Integer auctor felis sit amet suscipit aliquam. Sed bibendum eu eros eget congue. Praesent laoreet nisl ac nisi elementum finibus. Donec vitae nunc non lectus auctor fermentum in consequat nisi. Duis congue mollis vestibulum.
-
-                Nunc sagittis orci nec neque lobortis, a pharetra neque malesuada. Nam vel elit in lorem pellentesque convallis eget at dui. Vestibulum et magna lacus. Nam sodales est nec venenatis hendrerit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla sit amet nulla id massa luctus rutrum. Nullam tincidunt est vitae tortor feugiat, in bibendum sem elementum. Aliquam gravida nisl eget orci ullamcorper, sit amet semper nibh pellentesque. Sed vehicula massa quis neque auctor accumsan. Donec venenatis augue quis nisl cursus finibus nec vitae magna. Pellentesque malesuada purus quis facilisis congue. Ut nec metus convallis, aliquet lectus a, eleifend sapien.
-
-                In nec diam ligula. Nunc at diam pulvinar, consequat sem sit amet, semper ligula. Donec gravida iaculis mauris, eget fringilla erat placerat et. Aliquam eu elit purus. Mauris id enim felis. Quisque gravida iaculis justo, scelerisque pharetra dolor tempor quis. Donec vitae mauris eget urna venenatis aliquet eget vitae neque. Suspendisse vehicula imperdiet magna et posuere. Sed non porta justo, id vulputate ipsum.
-
-                Sed ut velit ac ligula tincidunt consectetur vitae vitae massa. Mauris suscipit, justo sed posuere malesuada, nisl massa tincidunt dolor, at ultricies neque dui ut ligula. Donec vitae facilisis diam. Suspendisse ac lacus eget sapien egestas facilisis ut a augue. Cras efficitur at nulla eu elementum. Sed rutrum urna sit amet nisl condimentum, eget luctus erat vehicula. Proin sit amet sollicitudin urna, non lobortis odio. Suspendisse enim urna, ullamcorper ac tincidunt et, pretium nec nisl.
+        <div class="row" ng-form="appForm" style="background-color: orange;'">
+            <div class="col-sm-5" style="border: 1px solid black;height: 100%; overflow: scroll">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        Intro
+                    </div>
+                    <div class="panel-body" style="color: blue;">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam blandit non quam sed viverra. Etiam condimentum ipsum ac enim congue semper. Donec ac massa sit amet quam bibendum porttitor quis quis leo. Aenean metus sapien, consectetur non felis in, volutpat semper nibh. Nunc vestibulum feugiat efficitur. In hac habitasse platea dictumst. Nunc ac porttitor sapien. Pellentesque auctor turpis id odio porta, a efficitur augue sodales. Morbi facilisis dolor turpis, nec eleifend libero egestas eget. Maecenas nulla felis, laoreet ut velit non, efficitur congue nisi. Cras et mi mollis, suscipit leo sed, tristique justo. Aliquam sed nulla et mauris aliquam placerat id vel sapien. Suspendisse tempor laoreet ullamcorper.
+                        </p>
+                        <p>
+                            Donec nisl ligula, ultrices ut mauris a, aliquet vulputate velit. Quisque euismod nisl eros, quis vehicula nibh varius at. Suspendisse pretium urna suscipit, cursus mi non, egestas odio. Sed interdum leo suscipit nisi tempus, id fermentum nunc vestibulum. Vestibulum vulputate libero dui, vel imperdiet purus malesuada et. Morbi arcu velit, dapibus ac ornare gravida, ultricies in neque. Duis sollicitudin pellentesque nisi at finibus. Integer auctor felis sit amet suscipit aliquam. Sed bibendum eu eros eget congue. Praesent laoreet nisl ac nisi elementum finibus. Donec vitae nunc non lectus auctor fermentum in consequat nisi. Duis congue mollis vestibulum.
+                        </p>
+                        <p>
+                            Nunc sagittis orci nec neque lobortis, a pharetra neque malesuada. Nam vel elit in lorem pellentesque convallis eget at dui. Vestibulum et magna lacus. Nam sodales est nec venenatis hendrerit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla sit amet nulla id massa luctus rutrum. Nullam tincidunt est vitae tortor feugiat, in bibendum sem elementum. Aliquam gravida nisl eget orci ullamcorper, sit amet semper nibh pellentesque. Sed vehicula massa quis neque auctor accumsan. Donec venenatis augue quis nisl cursus finibus nec vitae magna. Pellentesque malesuada purus quis facilisis congue. Ut nec metus convallis, aliquet lectus a, eleifend sapien.
+                        </p>
+                        <p>
+                            In nec diam ligula. Nunc at diam pulvinar, consequat sem sit amet, semper ligula. Donec gravida iaculis mauris, eget fringilla erat placerat et. Aliquam eu elit purus. Mauris id enim felis. Quisque gravida iaculis justo, scelerisque pharetra dolor tempor quis. Donec vitae mauris eget urna venenatis aliquet eget vitae neque. Suspendisse vehicula imperdiet magna et posuere. Sed non porta justo, id vulputate ipsum.
+                        </p>
+                        <p>
+                            Sed ut velit ac ligula tincidunt consectetur vitae vitae massa. Mauris suscipit, justo sed posuere malesuada, nisl massa tincidunt dolor, at ultricies neque dui ut ligula. Donec vitae facilisis diam. Suspendisse ac lacus eget sapien egestas facilisis ut a augue. Cras efficitur at nulla eu elementum. Sed rutrum urna sit amet nisl condimentum, eget luctus erat vehicula. Proin sit amet sollicitudin urna, non lobortis odio. Suspendisse enim urna, ullamcorper ac tincidunt et, pretium nec nisl.
+                        </p>
+                    </div>
+                </div>
             </div>
-            <div class="col-sm-5" style="border: 1px solid black;">
+            <div class="col-sm-6" style="border: 1px solid black;">
                 <div ng-view></div>
             </div>
-            <div class="col-sm-3" style="border: 1px solid black;">
+            <div class="col-sm-1" style="border: 1px solid black;">
                 Notes and side controls
             </div>
         </div>
@@ -35,7 +48,9 @@
     <script src="../bower_components/jquery/dist/jquery.js"></script>
     <script src="../bower_components/bootstrap/dist/js/bootstrap.js"></script>
     <script src="../bower_components/angular/angular.js"></script>
+    <script src="../bower_components/angular-route/angular-route.js"></script>
     <script src="./heron-app.js"></script>
+    <script src="./heron-app-views.js"></script>
     <!-- endbuild -->
 </body>
 </html>
