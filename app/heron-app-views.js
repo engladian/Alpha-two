@@ -1,72 +1,30 @@
 ﻿"use strict";
 var controllersModule = angular.module('heronApp.Controllers', ['ngRoute']);
 
-controllersModule.controller('startController', ['$scope', function ($scope) {
+controllersModule.controller('homeController', ['$scope',function ($scope) {
+    $scope.sponsor = {};
+
+    $scope.sponsor.code = 'CIGNA'; //this will come from the home resolved factory call
 
 
-    $scope.CalculateAge = function (dob) {
-        if (dob == null) {
-            return null;
-        }
+    //Calculate which panels to display.
 
-        var today = new Date();
-        var age = today.getFullYear() - dob.getFullYear();
-        var m = today.getMonth() - dob.getMonth();
-        if (m < 0 || (m === 0 && today.getDate() < dob.getDate())) {
-            age--;
-        }
-        return age;
-    }
 
 }]);
 
-
-controllersModule.directive('firstInsured', function () {
-    return {
-        restrict: 'E',
-        templateUrl: './components/shared-panels/main-insured.html',
-        controller: 'startController'
-    }
-});
-
-controllersModule.directive('secondInsured', function () {
-    return {
-        restrict: 'E',
-        templateUrl: './components/shared-panels/second-insured.html',
-        controller: 'startController'
-    }
-});
-
 //Shared Routing
-controllersModule.config(['$routeProvider', function ($routeProvider) {
-    $routeProvider
-         .when('/start', {
-             templateUrl: './product-views/start-view.html',
-             controller: 'startController'
-         })
-        // .when('/countries', {
-        //     templateUrl: 'countries/countries.html',
-        //     controller: 'CountriesController',
-        //     resolve: {
-        //         countries: ['countriesFactory', function (countriesFactory) {
-        //             return countriesFactory.getCountries();
-        //         }]
-        //     }
-        // })
-        //.when('/countries/:country/:capital', {
-        //    templateUrl: 'countrydetails/countrydetails.html',
-        //    controller: 'CountryDetailsController',
+controllersModule.config(['$routeProvider', function($routeProvider) {
+        $routeProvider
+            .when('/home', {
+                    templateUrl: './product-views/capture-view.html',
+                    controller: 'homeController'
         //    resolve: {
-        //        capitalPop: ['countriesFactory', '$route', function (countriesFactory, $route) {
-        //            var capital = $route.current.params.capital;
-        //            var countryCode = $route.current.params.country;
-        //            return countriesFactory.getCapitalPopulation(countryCode, capital);
+        //        customerData: ['customerFactory', '$route', function (customerFactory, $route) {
+        //            var xxxxzzzz = $route.current.params.dfdf;
+        //            var xxxxyyyy = $route.current.params.dfdfd;
+        //            return customerFactory.getCustomerInfo(dfdfdf, dsdsd);
         //        }],
-        //        neighbours: ['countriesFactory', '$route', function (countriesFactory, $route) {
-        //            var countryCode = $route.current.params.country;
-        //            return countriesFactory.getNeighbours(countryCode);
-        //        }]
         //    }
-        //})
-        .otherwise('/start');
+    })
+    .otherwise('/home');
 }]);

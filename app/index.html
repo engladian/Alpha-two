@@ -11,8 +11,8 @@
         <div class="row text-center mainheader">
             Product Heading
         </div>
-        <div class="row" ng-form="appForm" style="background-color: orange;'">
-            <div class="col-sm-5" style="border: 1px solid black;height: 100%; overflow: scroll">
+        <div class="row" ng-form="appForm" style="background-color: lightsalmon;">
+            <div class="col-sm-5" style="border: 1px solid black; height: 100%; overflow: scroll">
                 <div class="panel panel-default">
                     <div class="panel-heading">
                         Intro
@@ -36,11 +36,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-6" style="border: 1px solid black;">
+            <div class="col-sm-7" style="border: 1px solid black;">
                 <div ng-view></div>
-            </div>
-            <div class="col-sm-1" style="border: 1px solid black;">
-                Notes and side controls
             </div>
         </div>
     </div>
@@ -51,6 +48,8 @@
     <script src="../bower_components/angular-route/angular-route.js"></script>
     <script src="./heron-app.js"></script>
     <script src="./heron-app-views.js"></script>
+    <script src="./shared-panels/main-insured/main-insured.js"></script>
+    <script src="./shared-panels/second-insured/second-insured.js"></script>
     <!-- endbuild -->
 </body>
 </html>
